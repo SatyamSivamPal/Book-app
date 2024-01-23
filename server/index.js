@@ -70,6 +70,14 @@ app.get("/all-books", async(req, res) => {
     res.send(result);;
 })
 
+//single
+app.get("/book/:id", async(req,res) => {
+    const id = req.params.id;
+    const filter = { _id: new ObjectId(id)};
+    const result = await bookCollection.findOne(filter)
+    res.send(result)
+})
+
 app.get('/', (req, res) => {
     res.send("Hello world :)")
 })
