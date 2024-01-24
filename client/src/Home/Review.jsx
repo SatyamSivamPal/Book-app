@@ -11,6 +11,11 @@ import { FaStar } from "react-icons/fa6"
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Avatar } from 'flowbite-react';
+import profile from "../assets/profileImage.jpg"
+import profile2 from "../assets/profile2.jpg"
+import profile3 from "../assets/profile3.jpg"
+import profile4 from "../assets/profile4.jpg"
 
 const Review = () => {
     return (
@@ -40,8 +45,62 @@ const Review = () => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <div>
+                    <SwiperSlide className='shadow-2xl bg-white px-4 py-8 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    This app caters to all types of readers. From audiobooks to e-books, it's a one-stop-shop. The syncing across devices is seamless, and the reading stats are a fun addition. The only improvement I'd suggest is expanding the selection of graphic novels.
+                                </p>
+                                <Avatar img={profile} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Hari Prasad</h5>
+                                <p className='text-base'>CEO, IndiaTimes Company</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white px-4 py-8 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                As a busy professional, audiobooks are my go-to, and this app has an impressive selection. The offline mode is a game-changer during my commute. The only drawback is the occasional glitch in playback. Fix that, and it's a perfect audiobook hub.
+                                </p>
+                                <Avatar img={profile2} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Neha Sharma</h5>
+                                <p className='text-base'>Secretary, College Books</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white px-4 py-8 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                    
+                            </div>
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                The app provides a decent reading experience, but there's room for improvement. I'd love to see more customization options for the interface, and the social features could be more interactive. A good foundation, but it needs a bit more polish.
+                                </p>
+                                <Avatar img={profile3} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Ishika Agarwal</h5>
+                                <p className='text-base'>Chief Journalist, OTV</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white px-4 py-8 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
                             <div className='text-amber-500 flex gap-2'>
                                 <FaStar />
                                 <FaStar />
@@ -49,18 +108,16 @@ const Review = () => {
                                 <FaStar />
                                 <FaStar />
                             </div>
-                            <div><p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a asperiores quisquam ratione porro voluptates quos debitis atque eligendi totam explicabo, quidem quam, dignissimos deserunt necessitatibus cupiditate quae aliquam similique!</p></div>
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                This app is a dream for book lovers! The vast library, seamless navigation, and intuitive recommendations make it a joy to explore. I appreciate the reading challenges that keep me motivated. My new favorite companion for literary adventures!
+                                </p>
+                                <Avatar img={profile4} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Rakesh Sharma</h5>
+                                <p className='text-base'>Software Enginner, Goggle</p>
+                            </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
                 </Swiper>
             </div>
         </div>
