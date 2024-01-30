@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FaBarsStaggered, FaBlog, FaBook, FaXmark } from "react-icons/fa6"
+import logo from "../assets/logo.png"
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ function Navbar() {
         <header className='w-full bg-transparent fixed top-0 left-0 right-0 transition-all ease-in duration-300'>
             <nav className= {`py-4 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0 bg-blue-300" : ""}`}>
                 <div className='flex justify-between items-center gap-8 text-base'>
-                    <Link to="/" className='text-2xl font-bold text-blue-700 flex items-center gap-2'><FaBook className='inline-block' /> Bookify</Link>
+                    <Link to="/" className='text-2xl font-bold text-blue-700 flex items-center gap-2'><img src={logo} className='inline-block size-9 rounded-2xl bg-slate-100' alt="" /> Bookify</Link>
 
                     <ul className='md:flex space-x-12 hidden'>
                         {
