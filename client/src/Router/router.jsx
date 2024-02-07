@@ -6,7 +6,7 @@ import App from "../App";
 import Shop from "../Shop/Shop";
 import About from "../components/About";
 import Blog from "../components/Blog";
-import Home from "../Home/home";
+import Home from "../Home/Home";
 import SingleBook from "../Shop/SingleBook";
 import DashboardLayout from "../dashboard/DashboardLayout";
 import Dashboard from "../dashboard/Dashboard";
