@@ -3,7 +3,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import App from "../App";
-import Shop from "../Shop/shop";
+import Shop from "../Shop/Shop";
 import About from "../components/About";
 import Blog from "../components/Blog";
 import Home from "../Home/home";
