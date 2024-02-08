@@ -9,7 +9,7 @@ import { MongoClient, ObjectId } from "mongodb"
 
 const app = express()
 const port = process.env.PORT || 5000
-const { MONGODB_USERNAME, MONGODB_PASSWORD } = process.env;
+const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_HOST } = process.env;
 
 //middle ware
 app.use(cors());
@@ -20,7 +20,7 @@ connectToMongoDB()
     .then(() => {
         console.log("Connected Successfully :)");
 
-        const uri =  `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@localhost:27017/admin?directConnection=true`;
+        const uri =  `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:27017/admin?directConnection=true`;
         const client = new MongoClient(uri);
 
         client.connect()
