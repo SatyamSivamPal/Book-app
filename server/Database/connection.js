@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
-const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_HOST, MONGODB_STRING } = process.env;
+const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_STRING } = process.env;
 
 const uri = MONGODB_STRING;
 
