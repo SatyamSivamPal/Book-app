@@ -40,16 +40,3 @@ spec:
                 key: password
         ports:
         - containerPort: 5000
-        livenessProbe:
-          httpGet:
-            path: /ok
-            port: 5000
-          initialDelaySeconds: 2
-          periodSeconds: 5
-        readinessProbe:
-          httpGet:
-             path: /ok
-             port: 5000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-          successThreshold: 1
