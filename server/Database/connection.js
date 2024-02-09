@@ -3,9 +3,9 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
-const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_HOST } = process.env;
+const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_HOST, MONGODB_STRING } = process.env;
 
-const uri = `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:27017/admin?directConnection=true`;
+const uri = MONGODB_STRING;
 
 async function connectToMongoDB() {
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });

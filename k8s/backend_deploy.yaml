@@ -26,8 +26,8 @@ spec:
         image: public.ecr.aws/q9a3t3s6/server:latest
         imagePullPolicy: Always
         env:
-          - name: MONGODB_HOST
-            value: mongodb-svc
+          - name: MONGODB_STRING
+            value: mongodb://mongodb-svc:27017/admin?directConnection=true
           - name: MONGODB_USERNAME
             valueFrom:
               secretKeyRef:
