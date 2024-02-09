@@ -21,6 +21,8 @@ connectToMongoDB()
         console.log("Connected Successfully :)");
 
         const uri =  `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:27017/admin?directConnection=true`;
+        console.log('MongoDB Connection URI:', uri);
+
         const client = new MongoClient(uri);
 
         client.connect()
