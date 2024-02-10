@@ -18,8 +18,6 @@ app.use(express.json());
 //databse connection
 connectToMongoDB()
     .then(() => {
-        console.log("Connected Successfully :)");
-
         const uri =  MONGODB_STRING;
         console.log('MongoDB Connection URI:', uri);
 
