@@ -9,7 +9,7 @@ import { MongoClient, ObjectId } from "mongodb"
 
 const app = express()
 const port = process.env.PORT || 5000
-const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_STRING } = process.env;
+const { MONGODB_STRING } = process.env;
 
 //middle ware
 app.use(cors());
