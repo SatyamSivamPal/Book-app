@@ -8,6 +8,6 @@ spec:
     app: mongodb
   ports:
     - name: mongodb-svc
-    - protocol: TCP
+      protocol: TCP
       port: 27017
       targetPort: 27017
