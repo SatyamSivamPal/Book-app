@@ -22,7 +22,6 @@ async function connectToMongoDB() {
         password: MONGODB_PASSWORD
       };
     }
-
     await mongoose.connect(uri, connectionParams);
     console.log("Connected to the database.");
   } catch (error) {
